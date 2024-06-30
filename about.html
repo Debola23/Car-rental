@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="icon" href="./IMAGES/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+            </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="icon" href="./IMAGES/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+            </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="announcement-bar color-background-2 gradient" role="region" aria-label="Announcement" id="announce">
+        <p class="announcement-bar__message h5" id="announce2">
+          We Value Your Transport
+        </p>
+    </div>
+    <div class="container1">
+        <div class="span1" id="times" onclick=hideSidebar()>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                    <path d="M18.36 5.64l-1.41-1.41-5.65 5.66-5.65-5.66-1.41 1.41 5.65 5.66-5.65 5.66 1.41 1.41 5.65-5.66 5.65 5.66 1.41-1.41-5.65-5.66z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="head">
+            <a href="index.html">
+                <img src="./IMAGES/car-rental.png" class="head-img">
+            </a>
+          
+        </div>
+        <ol>
+            <li><a href="rent.html" class="nav-link" id="rent">Rent</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+
+
+            <li onclick="openPopup3()">
+                <a href="#" class="nav-link">Models</a>
+            </li>
+
+
+            <li onclick="openPopup3()">
+                <a href="#" class="nav-link">Rent +</a>
+            </li>
+
+            
+            <li><a href="#" class="nav-link">Our Team</a></li>
+            <li>
+                <li onclick="openPopup1()">
+                    <a href="#login" class="ali1">
+                    <img src="./IMAGES/profile.png" alt="login" height="35" width="35">
+                    </a>
+                </li>
+            </li>
+            <li>
+                <li onclick="openPopup2()">
+                    <a href="#login" class="ali2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="35" height="35" fill="#fff"> 
+                            <path fill="#ffffff" d="M288 0C422.4 0 512 35.2 512 80V96l0 32c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32l0 160c0 17.7-14.3 32-32 32v32c0 17.7-14.3 32-32 32H416c-17.7 0-32-14.3-32-32V448H192v32c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32l0-32c-17.7 0-32-14.3-32-32l0-160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h0V96h0V80C64 35.2 153.6 0 288 0zM128 160v96c0 17.7 14.3 32 32 32H272V128H160c-17.7 0-32 14.3-32 32zM304 288H416c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H304V288zM144 400a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm288 0a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM384 80c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16z"/>
+                        </svg>
+                    </a>
+                </li>
+            </li>
+        </ol>
+    </div>
+    <div class="span2" id="bars" onclick=showSidebar()>
+        <span>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fff">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-7h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1z"/>
+                </svg> 
+                <img src="./IMAGES/person.png" alt="" class="navboximg2">
+            </a> 
+        </span>       
+    </div>
+    <div class="overlay" id="overlay"></div>
+            <div class="popup-container" id="popupContainer">
+                <span class="close-btn" onclick="closePopup1()">&times;</span>
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <label for="popup-username">Username or Email:</label>
+                    <input type="text" id="popup-username" name="popup-username" required>
+
+                    <label for="popup-password">Password:</label>
+                    <input type="password" id="popup-password" name="popup-password" required>
+
+                    <button class="btn-sub" type="submit">Login</button>
+                </form>
+            </div>
+            <div class="pop" id="pop">
+                <span class="close-btn" onclick="closePopup3()">&times;</span>
+                <div>
+                    Sign in to access this feature
+                </div>
+            </div>
+                <div class="ab">
+                    <h1 class="hh11">
+                        Explore our vehicles options,choose
+                        <div class="benefits">
+                            <span class="text11">Comfort</span>
+                            <span class="text11">Elegance</span>
+                            <span class="text11">Low-Rates</span>
+                            <span class="text11">Luxury</span>
+                            <span class="text11">Comfort</span>
+                          </div>
+                        dont just rent a car <span class="tc">RENT THE CAR</span> 
+                    </h1>
+                    <div class="rent-d">
+                        <h3 class="h3r">RENT</h3>
+                        <p class="pr">
+                            <a href="./index.html">Home</a>/About
+                        </p>
+                    </div>
+                </div>
+                <div class="abt-us">
+                    <div class="left-abt">
+                        <span class="span-abt">ABOUT OUR COMPANY</span>
+                        <h1 class="h1-abt">You start the engine and your adventure begins</h1>
+                        <p class="p-abt">
+                            We are passionate about providing exceptional car rental services to our customers. 
+                            Whether you need a vehicle for a business trip, vacation, or special occasion, we've got you covered.
+                            With a wide range of vehicles to choose from, including economy cars, luxury sedans, SUVs, and more,
+                            we strive to meet the diverse needs of our clients. Our commitment to quality, reliability, and customer
+                            satisfaction sets us apart in the industry Experience the convenience and flexibility of renting a car,
+                            We look forward to serving you.
+                        </p>
+                    </div>
+                    <div class="right-abt">
+                        <img src="./IMAGES/saless man.png" height="540px" width="580px" class="img-abt">
+                    </div>
+                </div>
+                    <div class="mc">
+                        <div class="count-box">
+                            <img src="./IMAGES/count 1.png" alt="">
+                            <div>25</div>
+                            <p>Car Types</p>
+                        </div>
+                        <div class="count-box">
+                            <img src="./IMAGES/count 2.png" alt="">
+                            <div>15</div>
+                            <p>Rental Outlet</p>
+                        </div>
+                        <div class="count-box">
+                            <img src="./IMAGES/count 3.png" alt="">
+                            <div>314</div>
+                            <p>Rented Cars</p>
+                        </div>
+                    </div>
+                <div class="part2">
+                    <div class="part2-intro">
+                        <div class="hh3">Plan Your Trip Now</div>
+                        <div class="hh2">Quick & Easy Car Rental</div>
+                    </div>
+                    <div class="part2-box">
+                        <div class="part2-box1">
+                            <img src="./IMAGES/select car.png" alt="">
+                            <h3 class="hh3">Select Car</h3>
+                            <p class="pp">
+                                We offers a big range of vehicles for all your driving needs. 
+                                We have the perfect car to meet your needs
+                            </p>
+                        </div>
+                        <div class="part2-box1">
+                            <img src="./IMAGES/operator.png" alt="">
+                            <h3 class="hh3"> Operator</h3>
+                            <p class="pp">
+                                Our knowledgeable and friendly operators are always ready
+                                 to help with any questions or concerns
+                            </p>
+                        </div>
+                        <div class="part2-box1">
+                            <img src="./IMAGES/drive.png" alt="">
+                            <h3 class="hh3">Drive Car</h3>
+                            <p class="pp">
+                                Whether you're hitting the open road, we've
+                                 got you covered with our wide range of cars
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        <div class="call-ban">
+                <h2 class="ban-h2">
+                    Get in touch with us to book a car!
+                    <span class="s-bh">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-phone">
+                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+                        </svg>
+                        <h3 class="h3-num">(+234) 5556 777 889</h3>
+                    </span>
+                </h2>
+        </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="section about-us">
+                <h3>About Us</h3>
+                <p>
+                    Access quality health services — Affordable Health Cover For Individuals, Couples, 
+                    Families, SMEs & Large Companies. Protect your staff & loved ones. Get affordable health 
+                    cover for your family or business. Responsive.
+                 </p>
+            </div>
+            <div class="section subscribe">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="subscribe-form" action="#">
+                    <input type="email" class="subscribe-input" placeholder="Your Email">
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+            <div class="section phone-number">
+                <h3>Contact Us</h3>
+               <a href="#" class="call-black"><p>Phone: +234 5556 777 889</p></a> 
+            </div>
+            <div class="section socials">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <div class="card">
+                        <a href="#" class="socialContainer containerOne">
+                          <svg class="socialSvg instagramSvg" viewBox="0 0 16 16"> 
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
+                        </a>
+                        
+                        <a href="#" class="socialContainer containerTwo">
+                          <svg class="socialSvg twitterSvg" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path> </svg>              </a>
+                          
+                        <a href="#" class="socialContainer containerThree">
+                          <svg class="socialSvg linkdinSvg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                        </a>
+                        
+                        <a href="#" class="socialContainer containerFour">
+                          <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
+                        </a>
+                      </div> 
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
